@@ -94,8 +94,7 @@ weekday_steps <- dailyIntensities %>%
   group_by(weekday)
 head(weekday_steps)
 
-weekday_steps$weekday <-ordered(weekday_steps$weekday, levels=c("Monday", "Tuesday", "Wednesday", "Thursday",
-                                                                            "Friday", "Saturday", "Sunday"))
+weekday_steps$weekday <-ordered(weekday_steps$weekday, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 
 weekday_steps <-weekday_steps%>%
   group_by(weekday) %>%
@@ -113,4 +112,4 @@ ggplot(data = weekday_steps) + geom_col(mapping = aes(x = weekday, y = AverageVe
 ```
 # Conclusion
 
-Bellabeat can use this data to market its fitness trackers like the Ivy or the Leaf. Surprising insights, like the Tuesday slump of very active minutes, into a user's daily or weekly activities can urge them to be more conscious of their wellness habits and take actions like buy a fitness tracker to track their daily activities. The marketing team can also showcase the calories burnt with increasing number of minutes spent being very active and suggest to the users to ascertain their sweet spot where the calories burnt are highest, so they can better plan their exercise routines. In conclusion, data analysis of a similar product can help Bellabeat market its fitness tracker better and show potential customers the benefits of having it. 
+Bellabeat can use this data to market its fitness trackers like the Ivy or the Leaf. Surprising insights, like the Tuesday slump of very active minutes, into a user's daily or weekly activities can urge potential customers to be more conscious of their wellness habits and take actions like buy a fitness tracker to track their daily activities. The marketing team can also showcase Bellabeat's user dashboard with data visualizations in it to help users optimize their exercise routines.For example, they can demonstrate that more calories are burnt being very active compared to being less active or sedentary.This will help users identify which activity of theirs falls under which category of intensity and help them plan their exercise routines accordingly and help them achieve their health goals effectively. In conclusion, data analysis of a similar product can help Bellabeat market its fitness tracker better, build on its current user experience like having a more insightful dashboard and showcase to potential customers all the benefits of tracking health parameters using Bellabeat's products. 
